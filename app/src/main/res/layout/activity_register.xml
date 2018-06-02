@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/grad_bg"
+    android:padding="15dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kelompok3.rplinformatika.informaticslibrary.LoginAndRegister.RegisterActivity">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="#fff"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_login_form_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/registerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#80FFFFFF"
+                    android:textColor="#80FFFFFF"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama_form_register"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/registerNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#80FFFFFF"
+                    android:textColor="#80FFFFFF"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_form_register"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/registerNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No HP"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#80FFFFFF"
+                    android:textColor="#80FFFFFF"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_login_form_register"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/registerPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#80FFFFFF"
+                    android:textColor="#80FFFFFF"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/regiterButton"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#ffff"
+                    android:hint="REGISTER"
+                    android:textColor="#FFF"
+                    android:background="@drawable/bg_rectangle_button"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? Klik disini"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="12dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/textViewLogin"
+                    android:textColor="#FFF"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/login_form"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Copright 2018 @Informatika UIN SUNAN GUNUNG DJATI BANDUNG"
+        android:textColor="#fff" />
+
+</LinearLayout>
